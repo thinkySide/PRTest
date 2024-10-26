@@ -16,10 +16,15 @@ struct ContentView: View {
             Text("\(randomNumber)")
             
             Button("랜덤 숫자 돌리기") {
-                
+                fetchRandomNumber()
             }
         }
         .padding()
+    }
+    
+    /// 랜덤 숫자를 반환합니다.
+    private func fetchRandomNumber() {
+        randomNumber = Int.random(in: 1...100)
     }
 }
 
