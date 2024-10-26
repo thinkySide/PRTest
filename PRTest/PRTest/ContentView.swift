@@ -9,9 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State private var randomNumber: Int = 0
+    
     var body: some View {
         VStack {
-            Text("한톨민톨")
+            Text("\(randomNumber)")
             
             Button("랜덤 숫자 돌리기") {
                 
