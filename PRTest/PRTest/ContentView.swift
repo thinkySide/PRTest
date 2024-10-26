@@ -10,7 +10,14 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        Text("한톨민톨")
+        VStack {
+            Text("한톨민톨")
+            
+            Button("랜덤 숫자 돌리기") {
+                
+            }
+        }
+        .padding()
     }
 }
 
